@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: white;
+    color: purple;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid purple;
+}
+.titre{
+    text-align: left;
+}
+.header h1{
+    font-size: 35px;
+    color: purple;
+    margin: 0;
+}
+.header h3{
+    font-size: 14px;
+    margin: 3px 0 0;
+    color: black;
+}
+.header img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+nav ul li a{
+    display: block;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+nav ul li a:hover{
+    color: black;
+    transform: translateY(-3px);
+}
+.header nav{
+    margin-left: auto;
+}
+.header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+}
+aside{
+    flex: 1;
+    background-color: lightyellow;
+    padding: 20px;
+    border-radius: 8px;
+}
+aside h2{
+    color: #333;
+    font-size: 20px;
+}
+aside p{
+    padding: 8px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+
+@media(max-width:600px){
+    .content{
+        flex-direction: column;
+    }
+}
+.foot{
+    text-align: center;
+    padding: 3px;
+    background-color: white;
+    color: black;
+}
+.page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+aside:hover{
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}
+main, aside{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid lightgray;
+}
+main{
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("./image copy.png ");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    flex: 3;
+    min-height: 350px;
+
+}
+.texte{
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+.texte h2{
+    color: white;
+}
+.texte h3{
+    color: white;
+}
+.texte p{
+    color: white;
+    line-height: 1.6;
+}
+@media (max-width:600px) {
+    .texte{
+        flex-direction: column;
+    }
+}
+.btn{
+    background-color: purple;
+    color: white;
+    padding: 10px 20px ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(240, 53, 85);
+
+}
+.btn a{
+    color: white;
+}
+#apropos{
+    background-color: rgb(214, 198, 242);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.photo{
+    flex: 1;
+}
+.photo img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+.para{
+    flex: 1;
+    text-align: left;
+    line-height: 1.7;
+    color: black;
+}
+.para h2{
+    color: darkmagenta;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.para h3{
+      color: darkmagenta;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.para p{
+    font-size: 18px;
+    color: black;
+}
+
+#contact{
+    background-color: rgb(231, 214, 247);
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+#contact h2{
+    color: darkmagenta;
+    font-size: 30px;
+}
+#contact form{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#contact input,
+#contact textarea,
+#contact button{
+    font-size: 18px;
+    border: 3px solid purple;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#contact input:focus ,
+#contact textarea:focus{
+   outline: 2px solid black;
+   transform: scale(1.05);
+}
+#contact label{
+    font-size:18px;
+}
+#contact button{
+    margin-top: 20px;
+    background-color: purple;
+}
+#contact button:hover{
+    background-color: rgb(240, 53, 85);
+}
